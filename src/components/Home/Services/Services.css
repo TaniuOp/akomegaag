@@ -1,0 +1,25 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, auto);
+  gap: 10px; /* Adjust the gap between grid items as needed */
+}
+
+.grid-item {
+  border: 1px solid #ccc; /* Just for visualization */
+  padding: 20px;
+}
+
+.image {
+  grid-column: 1 / span 2; /* Image spans across 2 columns */
+  grid-row: 1 / span 2; /* Image spans across 2 rows */
+}
+
+.text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  grid-column: 3; /* Text is in the third column */
+  grid-row: 1 / span 2; /* Text spans across 2 rows */
+}
