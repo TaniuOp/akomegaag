@@ -2,13 +2,19 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
-    background-color: #333;
-    color: #fff;
+    padding: 8px;
+    color: #464646;
+    display: flex;
+    background-color: #ffffff2b;
+    color: #464646;
+    position: fixed;
+    top: 0;
+    z-index: 200;
+    width: 100%;
 }
 
 .header-logo img {
-    height: 40px;
+    height: 60px;
 }
 
 .header-nav ul {
@@ -26,10 +32,9 @@
     color: #fff;
     font-size: 20px;
     cursor: pointer;
-    display: none; /* initially hide the hamburger menu */
+    display: none; 
 }
 
-/* Hide menu items on small screens */
 @media screen and (max-width: 768px) {
     .header-nav ul {
         display: none;
@@ -53,6 +58,6 @@
     }
 
     .header-menu-toggle {
-        display: block; /* show the hamburger menu button */
+        display: block; 
     }
 }

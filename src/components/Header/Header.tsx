@@ -22,7 +22,7 @@ const Header: React.FC = () => {
                     <li><a href="/contact">Contact</a></li>
                 </ul>
             </nav>
-            <button className="header-menu-toggle" onClick={toggleMenu} style={{ display: window.innerWidth <= 768 || showMenu ? 'block' : 'none' }}>
+            <button className="header-menu-toggle" onClick={toggleMenu} style={{ display: window.innerWidth <= 768  ? 'block' : 'none' }}>
                 &#9776;
             </button>
         </header>
