@@ -1,18 +1,20 @@
 .footer {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .footer-info p {
-    margin: 0;
-  }
-  
-  .footer-social a {
-    color: #fff;
-    margin-left: 10px;
-  }
-  
+  background-color: #79737b;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-info p {
+  margin: 0;
+}
+
+.footer-social a {
+  color: #fff;
+}
+
+.footer-logo img {
+  height: 80px;
+}
