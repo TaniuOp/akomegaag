@@ -1,9 +1,26 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './Home.css';
 import Lance from '../../assets/lance.jpg';
 import Services from './Services/Services';
 
 const Home: React.FC = () => {
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollTop = window.scrollY;
+      const parallaxFactor = 0.2;
+
+      const headerImage = document.querySelector('.home-header img') as HTMLImageElement;
+      if (headerImage) {
+        headerImage.style.transform = `translateY(${scrollTop * parallaxFactor}px)`;
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
     <div className='home-container'>
       <header className='home-header'>

@@ -1,6 +1,8 @@
 .home-header {
   position: relative;
   text-align: center;
+  height: 95vh;
+  overflow: hidden;
 }
 
 .big-image {
@@ -16,6 +18,15 @@
 .home-header img {
   width: 100%;
   display: block;
-  height: 95vh;
-  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: auto;
+  z-index: -1; /* Ensure the image is behind other content */
+  transition: transform 0.3s ease; /* Add transition for smooth effect */
+}
+
+.projects {
+  background-color: #e7e7e7;
+  padding: 20px;
 }
