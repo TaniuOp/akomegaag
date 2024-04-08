@@ -22,11 +22,42 @@
   top: 0;
   left: 0;
   height: auto;
-  z-index: -1; /* Ensure the image is behind other content */
-  transition: transform 0.3s ease; /* Add transition for smooth effect */
+  z-index: -1;
+  transition: transform 0.3s ease;
 }
 
 .projects {
   background-color: #e7e7e7;
   padding: 20px;
+}
+
+.contact-container {
+  background-color: #e7e7e7;
+  padding: 20px;
+}
+
+.contact-sections {
+  display: flex;
+  align-items: flex-start;
+  margin: 20px;
+  border: 1px solid red;
+}
+
+.contact-texts {
+  margin: 1px;
+}
+
+.contact-logo {
+  width: 25%;
+  height: fit-content;
+  position: sticky;
+  top: 50%;
+}
+
+.contact-image {
+  width: 60%;
+}
+
+.contact-image-container {
+  max-width: 50%;
 }
