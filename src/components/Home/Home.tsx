@@ -1,7 +1,10 @@
 import React, { useEffect } from 'react';
 import './Home.css';
 import Lance from '../../assets/lance.jpg';
+import Logo from '../../assets/akomegaag_logo.png';
 import Services from './Services/Services';
+import Map from './Map/Map';
+import Projects from './Projects/Projecsts';
 
 const Home: React.FC = () => {
   useEffect(() => {
@@ -28,7 +31,7 @@ const Home: React.FC = () => {
           <h1>AK-Omega-AG</h1>
           <p> Design & Konstruktion im modernstem Stil.</p>
         </section>
-        <img src={Lance} alt='Logo' />
+        <img src={Lance} alt='image' />
       </header>
 
       <main>
@@ -66,15 +69,38 @@ const Home: React.FC = () => {
         <section>
           <Services />
         </section>
-        <section className='contact'>
-          <p> Contact content </p>
+
+        <div className='projects-container'>
+          <h2> PROJEKTE</h2>
+          <Projects />
+        </div>
+
+        <section className='contact-container'>
+          <h2> KONTAKTIERE UNS </h2>
+
+          <div className={'contact-sections'}>
+            <div className={'contact-image-container'}>
+              <img src={Lance} alt='image' className={'contact-image'} />
+              <img src={Logo} alt='logo' className={'contact-logo'} />
+            </div>
+            <div className={'contact-texts'}>
+              <p> AK Omega GU AG</p>
+              <p> Hauptstrasse 69</p>
+              <p> 5734 Reinach</p>
+            </div>
+            <div className={'contact-texts'}>
+              <p> Montag - Freitag</p>
+              <p> 08:00 - 12:00 & 13:30 - 17:00</p>
+            </div>
+            <Map />
+            <div className={'contact-texts'}>
+              <p> Diana Heger</p>
+              <p> E-Mail: info@omega-gu-ag.ch </p>
+              <p> Telefon: 062 771 50 07</p>
+            </div>
+          </div>
         </section>
       </main>
-      <footer>
-        <div className='social-links'>
-          <p> Social links content </p>
-        </div>
-      </footer>
     </div>
   );
 };
