@@ -1,0 +1,33 @@
+import React from 'react';
+import GoogleMapReact from 'google-map-react';
+import './Map.css';
+import { Icon } from '@iconify/react';
+import locationIcon from '../../../assets/locationIcon.svg';
+
+const Map: React.FC = () => {
+  const location = {
+    address: 'Hauptstrasse 69, 5734 Reinach',
+    lat: 47.2501198,
+    lng: 8.1810669,
+  };
+
+  const LocationPin = ({ text }: { text: string }) => (
+    <div className='pin'>
+      <Icon icon={locationIcon} className='pin-icon' />
+      <p className='pin-text'>{text}</p>
+    </div>
+  );
+
+  return (
+    <div className='map'>
+      <h2 className='map-h2'>AK-OMEGA-AG</h2>
+      <div className='google-map'>
+        <GoogleMapReact defaultCenter={{ lat: location.lat, lng: location.lng }} defaultZoom={17}>
+          <LocationPin text={location.address} />
+        </GoogleMapReact>
+      </div>
+    </div>
+  );
+};
+
+export default Map;
