@@ -4,7 +4,9 @@ import './Projects.css';
 const Projects: React.FC = () => {
   return (
     <div className='projects-container'>
-      <p>PROJECTS</p>
+      <div className='projects-grid'></div>
+      <div className='projects-grid'></div>
+      <div className='projects-grid'></div>
     </div>
   );
 };
