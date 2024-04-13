@@ -26,11 +26,6 @@
   transition: transform 0.3s ease;
 }
 
-.projects {
-  background-color: #e7e7e7;
-  padding: 20px;
-}
-
 .contact-container {
   background-color: #e7e7e7;
   padding: 20px;
@@ -60,4 +55,36 @@
 
 .contact-image-container {
   max-width: 50%;
+}
+
+.about-section {
+  display: flex;
+  align-items: flex-start;
+  margin: 20px;
+  border: 1px solid rgb(0, 89, 253);
+}
+
+.team {
+  margin: 20px;
+}
+
+.concept-section {
+  display: flex;
+  align-items: flex-start;
+  margin: 20px 40px;
+  border: 1px solid rgb(0, 89, 253);
+  flex-direction: column;
+  background-color: #e7e7e7;
+  padding: 20px;
+}
+
+.projects-container {
+  background-color: #e7e7e7;
+  padding: 20px;
+}
+
+.projects-grid {
+  border: '1px solid blue';
+  width: 30%;
+  height: 300px;
 }
