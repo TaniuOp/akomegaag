@@ -1,7 +1,7 @@
 .home-header {
   position: relative;
   text-align: center;
-  height: 95vh;
+  height: 75vh;
   overflow: hidden;
 }
 
@@ -27,51 +27,11 @@
 }
 
 .contact-container {
-  background-color: #e7e7e7;
+  background-color: #dfd5b3;
   padding: 20px;
   margin: 0 auto;
   padding: 20px;
   text-align: center;
-}
-
-.contact-sections {
-  display: flex;
-  align-items: stretch;
-  margin: 20px;
-  border: 1px solid red;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  gap: 10px;
-}
-
-.contact-texts {
-  margin: 1px;
-  text-align: left;
-}
-
-.contact-logo {
-  width: 25%;
-  height: fit-content;
-  position: sticky;
-  top: 50%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  max-width: 50%;
-  z-index: 1;
-}
-
-.contact-image {
-  width: 100%;
-  max-width: 100%;
-  height: auto;
-}
-
-.contact-image-container {
-  max-width: 20%;
-  position: relative;
 }
 
 .about-section {
@@ -88,11 +48,19 @@
 .concept-section {
   display: flex;
   align-items: flex-start;
-  margin: 20px 40px;
-  border: 1px solid rgb(0, 89, 253);
   flex-direction: column;
-  background-color: #e7e7e7;
+  background: linear-gradient(
+    0deg,
+    rgba(252, 252, 252, 1) 0%,
+    rgb(206 209 211) 53%
+  );
   padding: 20px;
+}
+
+.concept-text {
+  line-height: 1.875em;
+  font-size: 15px;
+  color: #363636;
 }
 
 .map-container {

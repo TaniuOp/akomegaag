@@ -13,25 +13,28 @@ const Projects: React.FC = () => {
         heute, um weitere Informationen zu erhalten.
       </p>
       <div>
-        <h3 className='brugg-title'>BRUGG Terrassenhäuser</h3>
         <div className='brugg-container'>
           <img src={BruggImage} alt='brugg' className='brugg-img' />
 
           <div className='brugg-text-container'>
-            <h4>Terrassenhäuser Chilhalde, Umiken - BRUGG </h4>
+            <h3 className='brugg-title'>Terrassenhäuser BRUGG</h3>
+
             <p className='brugg-text'>
               Bei unserem Entwurf wurde darauf geachtet, luxuriöse
               Familienresidenzen mit einer gut ausgebauten Infrastruktur und
               Minergie-P zu schaffen
             </p>
-            <button
-              className='projects-more-info'
-              onClick={() =>
-                window.open('https://www.traumheim-ag.ch/', '_blank')
-              }
-            >
-              Mehr Info
-            </button>
+            <h4 className='brugg-text-title'>Chilhalde, Umiken </h4>
+            <div className='projects-more-info-container'>
+              <button
+                className='projects-more-info'
+                onClick={() =>
+                  window.open('https://www.traumheim-ag.ch/', '_blank')
+                }
+              >
+                Mehr Info
+              </button>
+            </div>
           </div>
         </div>
       </div>

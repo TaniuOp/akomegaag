@@ -53,8 +53,15 @@
   font-size: 12px;
 }
 
+.projects-more-info-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+}
+
 .projects-more-info {
-  background-color: #007bff;
+  background-color: #5179a4;
   color: #fff;
   border: none;
   padding: 10px 20px;
@@ -64,6 +71,26 @@
 
 .projects-more-info:hover {
   background-color: #0056b3;
+}
+
+.brugg-container {
+  display: flex;
+  background-color: #e1e3e6;
+}
+
+.brugg-img {
+  max-width: 50%;
+}
+
+.brugg-text-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 50px;
+}
+
+.brugg-text-title {
+  margin: 0;
 }
 
 @media screen and (max-width: 768px) {
@@ -78,18 +105,4 @@
       margin-right: 0;
     }
   }
-}
-
-.brugg-container {
-  border: 1px solid purple;
-  display: flex;
-}
-
-.brugg-img {
-  max-width: 70%;
-  height: 900px;
-}
-
-.brugg-text-container {
-  border: 1px solid blue;
 }
