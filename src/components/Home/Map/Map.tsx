@@ -3,6 +3,7 @@ import GoogleMapReact from 'google-map-react';
 import './Map.css';
 import { Icon } from '@iconify/react';
 import locationIcon from '../../../assets/locationIcon.svg';
+import { googleMapsApiKey } from '../../../keys.ts';
 
 const Map: React.FC = () => {
   const location = {
@@ -22,7 +23,11 @@ const Map: React.FC = () => {
     <div className='map'>
       <h2 className='map-h2'>AK-OMEGA-AG</h2>
       <div className='google-map'>
-        <GoogleMapReact defaultCenter={{ lat: location.lat, lng: location.lng }} defaultZoom={17}>
+        <GoogleMapReact
+          bootstrapURLKeys={{ key: googleMapsApiKey }}
+          defaultCenter={{ lat: location.lat, lng: location.lng }}
+          defaultZoom={17}
+        >
           <LocationPin text={location.address} />
         </GoogleMapReact>
       </div>
