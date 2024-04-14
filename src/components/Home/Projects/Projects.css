@@ -51,7 +51,6 @@
 
 .projects-grid-adress {
   font-size: 12px;
-  margin-top: auto;
 }
 
 .projects-more-info {
@@ -79,4 +78,18 @@
       margin-right: 0;
     }
   }
+}
+
+.brugg-container {
+  border: 1px solid purple;
+  display: flex;
+}
+
+.brugg-img {
+  max-width: 70%;
+  height: 900px;
+}
+
+.brugg-text-container {
+  border: 1px solid blue;
 }

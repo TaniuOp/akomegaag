@@ -1,5 +1,6 @@
 import React from 'react';
 import './Projects.css';
+import BruggImage from '../../../assets/brugg_large.jpg';
 
 const Projects: React.FC = () => {
   return (
@@ -11,21 +12,28 @@ const Projects: React.FC = () => {
         unserer Kunden in die Realität umzusetzen. Kontaktieren Sie uns noch
         heute, um weitere Informationen zu erhalten.
       </p>
-      <h3 className='brugg-title'>BRUGG Terrassenhäuser</h3>
       <div>
-        <p className='brugg-text'>
-          Chilhalde, Umiken Chilhalde, Umiken - Brugg ​ Neubau Terrassenhäuser -
-          Auf der Baulandparzelle 5080 besteht ein bewilligtes Bauprojekt, mit
-          17 Terrassenhäuser. ​ Haben wir Ihr Interesse geweckt? Wir freuen uns
-          auf Ihre Kontaktaufnahme
-        </p>
+        <h3 className='brugg-title'>BRUGG Terrassenhäuser</h3>
+        <div className='brugg-container'>
+          <img src={BruggImage} alt='brugg' className='brugg-img' />
 
-        <p className='brugg-text'>
-          Terrassenhäuser Chilhalde, Umiken - BRUGG Bei unserem Entwurf wurde
-          darauf geachtet, luxuriöse Familienresidenzen mit einer gut
-          ausgebauten Infrastruktur und Minergie-P zu schaffen
-        </p>
-        <button className='projects-more-info'>Mehr Info</button>
+          <div className='brugg-text-container'>
+            <h4>Terrassenhäuser Chilhalde, Umiken - BRUGG </h4>
+            <p className='brugg-text'>
+              Bei unserem Entwurf wurde darauf geachtet, luxuriöse
+              Familienresidenzen mit einer gut ausgebauten Infrastruktur und
+              Minergie-P zu schaffen
+            </p>
+            <button
+              className='projects-more-info'
+              onClick={() =>
+                window.open('https://www.traumheim-ag.ch/', '_blank')
+              }
+            >
+              Mehr Info
+            </button>
+          </div>
+        </div>
       </div>
       <div className='projects-grid-container'>
         <div className='projects-grid'>
