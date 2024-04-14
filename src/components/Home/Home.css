@@ -33,9 +33,11 @@
 
 .contact-sections {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   margin: 20px;
   border: 1px solid red;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .contact-texts {
@@ -50,11 +52,11 @@
 }
 
 .contact-image {
-  width: 60%;
+  width: 100%;
 }
 
 .contact-image-container {
-  max-width: 50%;
+  max-width: 20%;
 }
 
 .about-section {
