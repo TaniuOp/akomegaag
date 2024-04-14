@@ -1,2 +1,2 @@
 export const googleMapsApiKey: string =
-  'AIzaSyAA7XiL8q8PyZkCPOK7lrptwU-U_bGjkpU';
+  import.meta.env.VITE_GOOGLE_MAPS_API_KEY || '';
