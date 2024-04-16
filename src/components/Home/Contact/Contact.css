@@ -1,12 +1,10 @@
 .contact-sections-container {
-  border: 1px solid red;
+  margin-bottom: 40px;
 }
 
 .contact-sections {
   display: flex;
-  align-items: stretch;
   margin: 20px;
-  border: 1px solid rgb(96, 167, 80);
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
@@ -16,6 +14,11 @@
 .contact-texts {
   margin: 1px;
   text-align: left;
+}
+
+.contact-texts p {
+  color: #414141;
+  margin: 0;
 }
 
 .contact-logo {
@@ -38,6 +41,6 @@
 }
 
 .contact-image-container {
-  max-width: 20%;
+  max-width: 15%;
   position: relative;
 }

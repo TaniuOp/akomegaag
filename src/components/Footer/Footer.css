@@ -1,6 +1,6 @@
 .footer {
-  background-color: #79737b;
-  color: #fff;
+  background-color: #dcdcdc;
+  color: #414141;
   padding: 20px;
   display: flex;
   justify-content: space-between;
@@ -9,12 +9,15 @@
 
 .footer-info p {
   margin: 0;
+  font-size: 10px;
 }
 
-.footer-social a {
-  color: #fff;
+.footer a {
+  color: #414141;
+  margin: 0;
+  font-size: 10px;
 }
 
 .footer-logo img {
-  height: 80px;
+  height: 40px;
 }
