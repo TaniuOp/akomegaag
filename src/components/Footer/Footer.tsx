@@ -15,10 +15,12 @@ const Footer: React.FC = () => {
       </div>
       <div className='footer-info'>
         <p>Diana Heger</p>
-        <a href='#'>
+
+        <p className='fa fa-twptter'>Telefon:+41 062 771 50 07</p>
+
+        <a href='mailto:info@omega-gu-ag.ch' target='_blank'>
           <i className='fa fa-twitter'>E-Mail: info@omega-gu-ag.ch</i>
         </a>
-        <p className='fa fa-twptter'>Telefon: 062 771 50 07</p>
       </div>
       <div className='footer-info'>
         <p> Öffnungszeiten: </p>

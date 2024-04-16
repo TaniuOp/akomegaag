@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import './Home.css';
-import Lance from '../../assets/lance.jpg';
+import Brugg from '../../assets/brugg_large.jpg';
 import Services from './Services/Services';
 import Projects from './Projects/Projecsts';
 import Contact from './Contact/Contact';
@@ -31,10 +31,10 @@ const Home: React.FC = () => {
     <div className='home-container'>
       <header className='home-header'>
         <section className='big-image'>
-          <h1>AK Omega AG</h1>
+          <h1 className='big-image-text'>AK Omega AG</h1>
           <p> Design & Konstruktion im modernstem Stil.</p>
         </section>
-        <img src={Lance} alt='image' />
+        <img src={Brugg} alt='image' />
       </header>
 
       <main>
@@ -54,35 +54,36 @@ const Home: React.FC = () => {
           <Services />
         </section>
 
-        <div className='projects-container'>
-          <h2> PROJEKTE</h2>
+        <section className='projects'>
+          <h2 className='projects-title'> PROJEKTE</h2>
           <Projects />
-        </div>
+        </section>
 
         <section className='team'>
           <h2>ÜBER UNS</h2>
           <div className={'about-section'}>
-            <p>
+            <p className='about-us-texts'>
               AK Omega AG ist ein Bauunternehmen mit mehr als 10 Jahren
-              Erfahrung, das sich auf den Wohnungsbau spezialisiert hat. AK
-              Architekten AG ist ein junges Unternehmen mit Anerkennung im
-              Kanton Aargau, zusammen haben sie mehr als 27.000 Quadratmeter Bau
-              entwickelt.
+              Erfahrung, das sich auf den Wohnungsbau spezialisiert hat. Mit
+              Anerkennung im Kanton Aargau.
             </p>
 
-            <p>
+            <p className='about-us-texts'>
               Das Team arbeitet unter der Leitung der Architekturabteilung, die
               von der Architektin Diana Heger geführt wird. Der Leiter der
               Bauabteilung ist Stefan Schüpfer. Die administrative und
               immobilienwirtschaftliche Projektleitung liegt bei Ivan J.
             </p>
 
-            <p>
+            <p className='about-us-texts'>
               Darüber hinaus verfügen wir über ein professionelles Team von
               Spezialisten in jedem Arbeitsbereich (Baumeister, Sanitär,
               Elektro, Landschaftsbau...) für die Ausführung und ganzheitliche
               Entwicklung unserer Projekte.
             </p>
+          </div>
+          <div className='about-us-extra'>
+            <h3>Mehr als 27.000 Quadratmeter Bau entwickelt.</h3>
           </div>
         </section>
 

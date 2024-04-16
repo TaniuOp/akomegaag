@@ -1,7 +1,6 @@
 import React from 'react';
 import './Contact.css';
 import Map from '../Map/Map';
-import Lance from '../../../assets/lance.jpg';
 import Logo from '../../../assets/akomegaag_logo.png';
 
 const Contact: React.FC = () => {
@@ -11,8 +10,7 @@ const Contact: React.FC = () => {
       <div className={'contact-sections-container'}>
         <div className={'contact-sections'}>
           <div className={'contact-image-container'}>
-            <img src={Lance} alt='image' className={'contact-image'} />
-            <img src={Logo} alt='logo' className={'contact-logo'} />
+            <img src={Logo} alt='logo' className={'contact-image'} />
           </div>
           <div className={'contact-texts'}>
             <p> AK Omega GU AG</p>

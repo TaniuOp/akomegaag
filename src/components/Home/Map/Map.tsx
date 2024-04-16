@@ -21,7 +21,6 @@ const Map: React.FC = () => {
 
   return (
     <div className='map'>
-      <h2 className='map-h2'>AK OMEGA AG</h2>
       <div className='google-map'>
         <GoogleMapReact
           bootstrapURLKeys={{ key: googleMapsApiKey }}
