@@ -37,7 +37,11 @@
 }
 
 .contact-container {
-  background-color: #efe7d1;
+  background: radial-gradient(
+    circle,
+    rgb(239 231 209 / 100%) 0%,
+    rgb(255 255 255 / 21%) 100%
+  );
   padding: 20px;
   margin: 0 auto;
   padding: 20px;
