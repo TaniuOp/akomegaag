@@ -1,7 +1,7 @@
 {
   "name": "akomegaag",
   "homepage": "https://ak-omega-ag.ch/",
-  "private": true,
+  "private": false,
   "version": "1.0.0",
   "type": "module",
   "scripts": {
