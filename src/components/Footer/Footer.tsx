@@ -18,7 +18,7 @@ const Footer: React.FC = () => {
 
         <p className='fa fa-twptter'>Telefon:+41 062 771 50 07</p>
 
-        <a href='mailto:info@omega-gu-ag.ch' target='_blank'>
+        <a href='mailto:info@omega-gu-ag.ch' target='_blank' rel='noreferrer'>
           <i className='fa fa-twitter'>E-Mail: info@omega-gu-ag.ch</i>
         </a>
       </div>
