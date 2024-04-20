@@ -4,8 +4,23 @@ import react from '@vitejs/plugin-react';
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
+  esbuild: {
+    loader: 'jsx',
+  },
   resolve: {
     extensions: ['.js', '.jsx', '.ts', '.tsx'],
+
+    alias: {
+      './runtimeConfig': './runtimeConfig.browser',
+    },
   },
-  base: '/akomegaag',
+  optimizeDeps: {
+    esbuildOptions: {
+      loader: {
+        '.js': 'jsx',
+      },
+    },
+  },
+
+  base: '/',
 });
